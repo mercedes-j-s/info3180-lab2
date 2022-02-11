@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" type="text/css" alt="Profile Picture"/>
+
+
+      <div class="card-container">
+         <div class="upper-container">
+            <div class="image-container">
+               <img src="{{ url_for('static', filename='profile.jpg') }}"/>
+            </div>
+            <div>
+                <br>
+                <h3>✿Mercedes Smith✿</h3>
+                <p>@mercedes</p>
+                <p>Kingston, Jamaica</p>
+                <p>Joined February, 2022</p>
+             </div>
+         </div>
+         <div class="lower-container">
+            <p>
+                <br>
+                A Full Time Computing Student in a Pandemic.<br>
+                ★Procrastinator at Heart★<br>
+                Contact me if you would like to work together on a new project.
+            </p>
+            <div class = "following">
+                <div>
+                    <h4>100</h4>
+                    <p>Posts</p>
+                </div>
+                <div>
+                    <h4>100</h4>
+                    <p>Following</p>
+                </div>
+                <div>
+                    <h4>100</h4>
+                    <p>Followers</p>
+                </div> 
+            </div>
+            <div>
+                <button type="button" class="btn">Follow</button>
+            </div>
+        </div>
+
+        Profile Created: {{ name }}
+
+        </div>
+
+{% endblock %}
